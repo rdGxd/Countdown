@@ -1,25 +1,26 @@
 const tempo = document.querySelector("#tempo");
 
+const segundo = 1000;
+const minuto = 60 * segundo;
+const hora = 60 * minuto;
+const dia = 24 * hora;
+
 function updateTimer() {
-  futuro = Date.parse("feb 25, 2023 07:00:00");
+  dataFinal = Date.parse("Feb 25 2023 07:00:00 GMT-3");
+  dataAtual = Date.now();
+  let diff = dataFinal - dataAtual;
 
-  agora = new Date();
-  diff = futuro - agora;
+  const dias = Math.floor(diff / dia);
+  diff -= dias * dia;
+  const horas = Math.floor(diff / hora);
+  diff -= horas * hora;
+  const minutos = Math.floor(diff / minuto);
+  diff -= minutos * minuto;
+  const segundos = Math.floor(diff / 1000);
 
-  dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-  horas = Math.floor(diff / (1000 * 60 * 60));
-  minutos = Math.floor(diff / (1000 * 60));
-  segundos = Math.floor(diff / 1000);
+  tempo.innerHTML = `${dias} : ${horas} : ${minutos} : ${segundos}`;
 
-  d = dias;
-  h = horas - dias * 24;
-  m = minutos - horas * 60;
-  s = segundos - minutos * 60;
-
-  tempo.innerHTML = `${d} : ${h} : ${m} : ${s}`;
-
-  if (agora > futuro) {
-    console.log("a")
+  if (dataAtual > dataFinal) {
     tempo.innerHTML = "Tempo esgotado";
     clearInterval(intervalID);
   }

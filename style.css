@@ -51,7 +51,6 @@ p {
   color: #9c9ab6;
 
   margin-bottom: 31px;
-  margin-top: 45px;
   text-align: center;
 }
 
@@ -61,6 +60,7 @@ section {
 }
 
 #tempo {
+  display: inline-block;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -84,4 +84,3 @@ section {
   align-items: center;
   text-align: center;
 }
-
