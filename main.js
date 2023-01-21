@@ -7,7 +7,7 @@ const dia = 24 * hora;
 
 function updateTimer() {
   dataFinal = Date.parse("Feb 25 2023 07:00:00 GMT-3");
-  dataAtual = Date.now();
+  dataAtual = new Date();
   let diff = dataFinal - dataAtual;
 
   const dias = Math.floor(diff / dia);
