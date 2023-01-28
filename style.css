@@ -1,6 +1,6 @@
 * {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -10,15 +10,15 @@ main {
 
 main img {
   display: flex;
-  margin-left: 82px;
+  margin-left: 5.12rem;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
   letter-spacing: 0.105em;
   text-transform: uppercase;
 
@@ -26,18 +26,19 @@ h1 {
 }
 
 button {
-  width: 160px;
-  height: 46px;
-  border: 1px solid #6c63ff;
+  all: unset;
+  width: 10rem;
+  height: 2.87rem;
+  border: 0.06rem solid #6c63ff;
 
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 
   background: #6c63ff;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 
   color: #ffffff;
 }
@@ -46,16 +47,16 @@ p {
   font-family: "Poppins", sans-serif;
   font-family: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
   color: #9c9ab6;
 
-  margin-bottom: 31px;
+  margin-bottom: 1.938rem;
   text-align: center;
 }
 
 section {
-  margin-left: 120px;
+  margin-left: 7.5rem;
   text-align: center;
 }
 
@@ -64,23 +65,18 @@ section {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 108px;
+  font-size: 4.5rem;
+  line-height: 6.75rem;
   color: #4d4c59;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 #algo {
   display: flex;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
 
   color: #c8c8c8;
-
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
 }
